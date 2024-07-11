@@ -16,7 +16,10 @@ public class User {
     private Long id; //Chave primaria
 
     private String name;
+
+    @Column(unique = true) //A coluna email ao ir para o banco relacional sera única.
     private String email;
+
     private String phone;
     private LocalDate birthDate;
     private String password;
