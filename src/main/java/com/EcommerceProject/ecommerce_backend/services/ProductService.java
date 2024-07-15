@@ -1,5 +1,4 @@
 package com.EcommerceProject.ecommerce_backend.services;
-
 import com.EcommerceProject.ecommerce_backend.dto.ProductDTO;
 import com.EcommerceProject.ecommerce_backend.entities.Product;
 import com.EcommerceProject.ecommerce_backend.repositories.ProductRepository;
@@ -9,9 +8,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ProductService {
