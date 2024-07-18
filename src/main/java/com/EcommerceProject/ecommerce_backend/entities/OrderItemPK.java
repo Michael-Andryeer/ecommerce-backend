@@ -1,12 +1,12 @@
 package com.EcommerceProject.ecommerce_backend.entities;
 
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import java.io.Serializable;
 
 @Embeddable
-public class OrderItemPK { //Classe auxiliar para representar a chave primaria composta.
+public class OrderItemPK  implements Serializable { //Classe auxiliar para representar a chave primaria composta.
 
     @ManyToOne
     @JoinColumn(name = "order_id")

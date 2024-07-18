@@ -1,7 +1,7 @@
 package com.EcommerceProject.ecommerce_backend.controllers;
 import com.EcommerceProject.ecommerce_backend.dto.ProductDTO;
 import com.EcommerceProject.ecommerce_backend.services.ProductService;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

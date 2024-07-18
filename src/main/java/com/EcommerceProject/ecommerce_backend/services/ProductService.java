@@ -4,7 +4,7 @@ import com.EcommerceProject.ecommerce_backend.entities.Product;
 import com.EcommerceProject.ecommerce_backend.repositories.ProductRepository;
 import com.EcommerceProject.ecommerce_backend.services.exceptions.DatabaseException;
 import com.EcommerceProject.ecommerce_backend.services.exceptions.ResourceNotFoundException;
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;

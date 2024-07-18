@@ -1,8 +1,8 @@
 package com.EcommerceProject.ecommerce_backend.dto;
 import com.EcommerceProject.ecommerce_backend.entities.Product;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 public class ProductDTO {
 

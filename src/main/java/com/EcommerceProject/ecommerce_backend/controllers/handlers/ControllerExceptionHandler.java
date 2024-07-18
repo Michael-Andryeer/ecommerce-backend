@@ -4,7 +4,7 @@ import com.EcommerceProject.ecommerce_backend.dto.CustomError;
 import com.EcommerceProject.ecommerce_backend.dto.ValidationError;
 import com.EcommerceProject.ecommerce_backend.services.exceptions.DatabaseException;
 import com.EcommerceProject.ecommerce_backend.services.exceptions.ResourceNotFoundException;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
