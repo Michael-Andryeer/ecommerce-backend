@@ -57,8 +57,8 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (23, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (24, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (25, 3);
 
-INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Michael Andryeer', 'andryeerm@gmail.com', '988888888', '123456', '2001-07-25');
-INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Vitoria Caroline', 'vivilinda@gmail.com', '977777777', '123456', '1987-12-13');
+INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Michael Andryeer', 'andryeerm@gmail.com', '988888888', '$2a$12$upW4BnyKzAC32n1Ok4sw3O', '2001-07-25');
+INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Vitoria Caroline', 'vivilinda@gmail.com', '977777777', '$2a$12$upW4BnyKzAC32n1Ok4sz3O', '1987-12-13');
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_CLIENT');
 INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
