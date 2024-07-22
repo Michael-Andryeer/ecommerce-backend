@@ -57,8 +57,8 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (23, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (24, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (25, 3);
 
-INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Michael Andryeer', 'andryeerm@gmail.com', '988888888', '$2a$12$upW4BnyKzAC32n1Ok4sw3O', '2001-07-25');
-INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Vitoria Caroline', 'vivilinda@gmail.com', '977777777', '$2a$12$upW4BnyKzAC32n1Ok4sz3O', '1987-12-13');
+INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Michael Andryeer', 'andryeerm@gmail.com', '988888888', '$2a$12$0SKHEJLvl30KzCl5OIi5o.7xB5SVezLnl.ieFo8qh.RWLhKGxwf0e', '2001-07-25');
+INSERT INTO tb_user (name, email, phone, password, birth_date) VALUES ('Vitoria Caroline', 'vivilinda@gmail.com', '977777777', '$2a$12$0SKHEJLvl30KzCl5OIi5o.7xB5SVezLnl.ieFo8qh.RWLhKGxwf0e', '1987-12-13');
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_CLIENT');
 INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
@@ -66,6 +66,7 @@ INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
 INSERT INTO tb_user_role (user_id,role_id) VALUES (1,1)
 INSERT INTO tb_user_role (user_id,role_id) VALUES (2,1)
 INSERT INTO tb_user_role (user_id,role_id) VALUES (2,2)
+
 
 INSERT INTO tb_order (moment, status, client_id) VALUES (TIMESTAMP WITH TIME ZONE '2022-07-25T13:00:00Z', 1, 1);
 INSERT INTO tb_order (moment, status, client_id) VALUES (TIMESTAMP WITH TIME ZONE '2022-07-29T15:50:00Z', 3, 2);

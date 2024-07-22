@@ -16,10 +16,11 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-
         User user = repository.findByEmail(username);
-        if(user == null)
-             throw new UsernameNotFoundException("Email não encontrado!");
+        if(user == null) {
+            throw new UsernameNotFoundException("Email não encontrado!");
+        }
         return user;
     }
+
 }
