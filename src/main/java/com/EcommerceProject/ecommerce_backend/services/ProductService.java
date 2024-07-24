@@ -1,6 +1,8 @@
 package com.EcommerceProject.ecommerce_backend.services;
+import com.EcommerceProject.ecommerce_backend.dto.CategoryDTO;
 import com.EcommerceProject.ecommerce_backend.dto.ProductDTO;
 import com.EcommerceProject.ecommerce_backend.dto.ProductMinDTO;
+import com.EcommerceProject.ecommerce_backend.entities.Category;
 import com.EcommerceProject.ecommerce_backend.entities.Product;
 import com.EcommerceProject.ecommerce_backend.repositories.ProductRepository;
 import com.EcommerceProject.ecommerce_backend.services.exceptions.DatabaseException;
@@ -59,7 +61,13 @@ public class ProductService {
         entity.setName(dto.getName());
         entity.setDescription(dto.getDescription());
         entity.setPrice(dto.getPrice());
+        entity.getCategories().clear(); //Limpa a lista que tinha e envia as novas no código abaixo
         entity.setImgUrl(dto.getImgUrl());
+        for(CategoryDTO catDto : dto.getCategories()) {
+            Category cat = new Category();
+            cat.setId(catDto.getId());
+            entity.getCategories().add(cat);
+        }
     }
 
     @Transactional(propagation = Propagation.SUPPORTS)
@@ -70,7 +78,7 @@ public class ProductService {
             throw new ResourceNotFoundException("Recurso não encontrado!");
         }
         catch (DataIntegrityViolationException e) {
-            throw new DatabaseException("Falha de integridade referencial");
+            throw new DatabaseException("Falha de integridade referencial!");
         }
     }
 }
